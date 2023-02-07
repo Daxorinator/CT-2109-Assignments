@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51b49291-31ad-42ed-a690-85091a6097e5" name="Changes" comment="">
+    <list default="true" id="51b49291-31ad-42ed-a690-85091a6097e5" name="Changes" comment="Add comments">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InfixToPostfix/InfixToPostfix.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InfixToPostfix/src/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InfixToPostfix/src/InfixToPostfix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InfixToPostfix/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InfixToPostfix/src/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/typeracer/typeracer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Typeracer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Typeracer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Typeracer.java" beforeDir="false" afterPath="$PROJECT_DIR$/typeracer/src/Typeracer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeracer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/typeracer.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -27,7 +38,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2KPW1WfL1JnzAKMeSygmQv6vkhE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,15 +49,26 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "temurin-19",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\daxor\IdeaProjects\CT-2109-Assignments\InfixToPostfix\src" />
+      <recent name="C:\Users\daxor\IdeaProjects\CT-2109-Assignments\typeracer" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,7 +80,17 @@
       <workItem from="1673876506378" duration="1032000" />
       <workItem from="1673890161783" duration="373000" />
       <workItem from="1674475830017" duration="4198000" />
+      <workItem from="1674687420638" duration="500000" />
+      <workItem from="1675793116409" duration="15548000" />
     </task>
+    <task id="LOCAL-00001" summary="Add comments">
+      <created>1674687615810</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674687615810</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,6 +106,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comments" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
