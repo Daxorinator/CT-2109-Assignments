@@ -1,15 +1,12 @@
 import javax.swing.*;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class InfixToPostfix {
 
-	List<Character> numbers = Arrays.asList('0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
-	List<Character> operators = Arrays.asList('(', ')', '^', '*', '/', '+', '-');
-	List<Character> allAllowed = Arrays.asList('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '(', ')', '^', '*', '/', '+', '-');
+	private static final List<Character> allAllowed = Arrays.asList('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '(', ')', '^', '*', '/', '+', '-');
 
-	public int getPrecedenceScore(char input) {
+	private int getPrecedenceScore(char input) {
 		return switch (input) {
 				default -> 0;
 				case '(', ')' -> 4;
@@ -27,44 +24,62 @@ public class InfixToPostfix {
 		}
 
 		while (true) {
+			int bracketCount = 0;
+			boolean invalid = false;
+
 			for (int i = 0; i < input.length(); i++) {
-				char character = input.charAt(i);
-				if (!allAllowed.contains(character)) {
-					input = JOptionPane.showInputDialog("Error: Invalid character, please enter a new infix expression");
-					break;
+				char c = input.charAt(i);
+
+				switch (c) {
+					case '(' -> bracketCount += 1;
+					case ')' -> bracketCount -= 1;
+				}
+
+				if (!allAllowed.contains(c) || bracketCount < 0) {
+					invalid = true;
 				}
 			}
-			break;
+
+			if (bracketCount != 0) {
+				invalid = true;
+			}
+
+			if (invalid) {
+				input = JOptionPane.showInputDialog("Error: Invalid expression, please enter a new infix expression");
+			} else {
+				break;
+			}
 		}
+
 		return input;
 	}
 
-	public String InfixToPostfix(String input) {
+	public String convertToPostfix(String input) {
 		ArrayStack operators = new ArrayStack();
 		String output = "";
 
 		for (int i = 0; i < input.length(); i++) {
 
-			char character = input.charAt(i);
+			char c = input.charAt(i);
 
-			if (numbers.contains(character)) {
-				output += character;
+			if (Character.isDigit(c)) {
+				output += c;
 			} else if (operators.isEmpty()) {
-				operators.push(character);
-			} else if (getPrecedenceScore(character) > getPrecedenceScore((char) operators.top()) || (char) operators.top() == '(' || character == '(') {
-				operators.push(character);
+				operators.push(c);
+			} else if (getPrecedenceScore(c) > getPrecedenceScore((char) operators.top()) || (char) operators.top() == '(' || c == '(') {
+				operators.push(c);
 			} else {
-				while (getPrecedenceScore((char) operators.top()) >= getPrecedenceScore(character) && (char) operators.top() != '(' && (char) operators.top() != ')') {
+				while (getPrecedenceScore((char) operators.top()) >= getPrecedenceScore(c) && (char) operators.top() != '(' && (char) operators.top() != ')') {
 					output += (char) operators.pop();
 
 					if (operators.isEmpty()) {
 						break;
 					}
 				}
-				operators.push(character);
+				operators.push(c);
 			}
 
-			if (character == ')') {
+			if (c == ')') {
 				while (true) {
 					char lastPopped = (char) operators.pop();
 					if (lastPopped == '(') {
@@ -77,26 +92,26 @@ public class InfixToPostfix {
 			}
 		}
 
-		while (operators.isEmpty() == false) {
+		while (!operators.isEmpty()) {
 			output += (char) operators.pop();
 		}
 
 		return output;
-	};
+	}
 
 	public float calculatePostfixExpression(String input) {
 		ArrayStack operands = new ArrayStack();
 
 		for (int i = 0; i < input.length(); i++) {
-			char character = input.charAt(i);
+			char c = input.charAt(i);
 
-			if (numbers.contains(character)) {
-				operands.push((float) Character.getNumericValue(character));
+			if (Character.isDigit(c)) {
+				operands.push((float) Character.getNumericValue(c));
 			} else {
 				float firstOperand = (float) operands.pop();
 				float secondOperand = (float) operands.pop();
 
-				float result = switch (character) {
+				float result = switch (c) {
 					default -> 0;
 
 					case '^' -> (float) Math.pow(secondOperand, firstOperand);

@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51b49291-31ad-42ed-a690-85091a6097e5" name="Changes" comment="Add comments">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfixToPostfix/InfixToPostfix.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfixToPostfix/src/ArrayStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfixToPostfix/src/InfixToPostfix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfixToPostfix/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InfixToPostfix/src/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/typeracer/typeracer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="51b49291-31ad-42ed-a690-85091a6097e5" name="Changes" comment="Fixed InfixToPostfix to improve error detection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Typeracer.java" beforeDir="false" afterPath="$PROJECT_DIR$/typeracer/src/Typeracer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typeracer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/typeracer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfixToPostfix/src/InfixToPostfix.java" beforeDir="false" afterPath="$PROJECT_DIR$/InfixToPostfix/src/InfixToPostfix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfixToPostfix/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/InfixToPostfix/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,24 +36,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "temurin-19",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-19&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\daxor\IdeaProjects\CT-2109-Assignments\InfixToPostfix\src" />
@@ -81,7 +72,8 @@
       <workItem from="1673890161783" duration="373000" />
       <workItem from="1674475830017" duration="4198000" />
       <workItem from="1674687420638" duration="500000" />
-      <workItem from="1675793116409" duration="15548000" />
+      <workItem from="1675793116409" duration="15893000" />
+      <workItem from="1675868076334" duration="2434000" />
     </task>
     <task id="LOCAL-00001" summary="Add comments">
       <created>1674687615810</created>
@@ -90,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674687615810</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Move Typeracer to sub-folder; Implement InfixtoPostfix (Assigment 2)">
+      <created>1675809556730</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675809556730</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +108,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comments" />
+    <MESSAGE value="Move Typeracer to sub-folder; Implement InfixtoPostfix (Assigment 2)" />
+    <MESSAGE value="Fixed InfixToPostfix to improve error detection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed InfixToPostfix to improve error detection" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
