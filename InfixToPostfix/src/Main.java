@@ -6,7 +6,7 @@ public class Main {
 
 		String testInput = test.getInput();
 
-		String output = test.InfixToPostfix(testInput);
+		String output = test.convertToPostfix(testInput);
 
 		float result = test.calculatePostfixExpression(output);
 
