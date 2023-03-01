@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51b49291-31ad-42ed-a690-85091a6097e5" name="Changes" comment="Fixed InfixToPostfix to improve error detection">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Palindromes/Palindromes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Palindromes/src/ArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Palindromes/src/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Palindromes/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Palindromes/src/Palindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Palindromes/src/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Palindromes/src/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InfixToPostfix/src/InfixToPostfix.java" beforeDir="false" afterPath="$PROJECT_DIR$/InfixToPostfix/src/InfixToPostfix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InfixToPostfix/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/InfixToPostfix/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,18 +51,22 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/daxor/IdeaProjects/CT-2109-Assignments/Palindromes/src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\daxor\IdeaProjects\CT-2109-Assignments\Palindromes\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\daxor\IdeaProjects\CT-2109-Assignments\InfixToPostfix\src" />
       <recent name="C:\Users\daxor\IdeaProjects\CT-2109-Assignments\typeracer" />
@@ -73,7 +85,10 @@
       <workItem from="1674475830017" duration="4198000" />
       <workItem from="1674687420638" duration="500000" />
       <workItem from="1675793116409" duration="15893000" />
-      <workItem from="1675868076334" duration="2434000" />
+      <workItem from="1675868076334" duration="2511000" />
+      <workItem from="1675893344750" duration="4697000" />
+      <workItem from="1677584727620" duration="20869000" />
+      <workItem from="1677679152754" duration="8761000" />
     </task>
     <task id="LOCAL-00001" summary="Add comments">
       <created>1674687615810</created>
@@ -89,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675809556730</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed InfixToPostfix to improve error detection">
+      <created>1675879263389</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675879263389</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed InfixToPostfix to improve error detection">
+      <created>1675879282550</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675879282550</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +140,16 @@
     <MESSAGE value="Move Typeracer to sub-folder; Implement InfixtoPostfix (Assigment 2)" />
     <MESSAGE value="Fixed InfixToPostfix to improve error detection" />
     <option name="LAST_COMMIT_MESSAGE" value="Fixed InfixToPostfix to improve error detection" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

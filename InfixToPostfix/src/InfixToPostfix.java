@@ -78,6 +78,7 @@ public class InfixToPostfix {
 
 			// If the invalid flag is thrown, something is wrong, get a new input - loop again.
 			if (invalid) {
+				System.out.println(input);
 				input = JOptionPane.showInputDialog("Error: Invalid expression, please enter a new infix expression");
 			} else {
 				// Otherwise hurray the expression is valid and we can break out of the infinite loop
